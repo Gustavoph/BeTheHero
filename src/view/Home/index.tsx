@@ -1,12 +1,13 @@
 import React from 'react';
 import { FiLogIn } from 'react-icons/fi';
-import { Container, Content, ButtonCreateAccount } from './style';
+import { Link } from 'react-router-dom';
 
-import LogoImg from '../assets/imgs/logo.svg';
-import HeroesImg from '../assets/imgs/pessoas.svg';
-import { Button, Input } from '../style/components';
+import { Container, Content } from './style';
+import LogoImg from '../../assets/imgs/logo.svg';
+import HeroesImg from '../../assets/imgs/pessoas.svg';
+import { Button, Input } from '../../style/components';
 
-function App() {
+export function Home() {
   return (
     <Container>
       <Content>
@@ -20,10 +21,10 @@ function App() {
 
             <Button type="submit">Entrar</Button>
 
-            <ButtonCreateAccount>
-              <i><FiLogIn /></i>
-              <p>Não tenho cadastro</p>
-            </ButtonCreateAccount>
+            <Link to="/register">
+              <FiLogIn />
+              Não tenho cadastro
+            </Link>
           </form>
         </section>
         
@@ -33,4 +34,3 @@ function App() {
   );
 }
 
-export default App;

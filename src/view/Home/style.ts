@@ -38,20 +38,26 @@ export const Content = styled.section`
       font-weight: medium;
       margin-bottom: 3.2rem;
     }
+
+    a {
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      margin-top: 4rem;
+      
+      svg {
+        color: var(--red);
+        font-size: 3rem;
+        margin-right: 1.9rem;
+      }
+
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--text-secondary);      
+    }
   }
 `
 
 export const ButtonCreateAccount = styled.button`
-  display: flex;
-  align-items: center;
   
-  svg {
-    color: var(--red);
-    font-size: 3rem;
-    margin-right: 1.9rem;
-  }
-
-  p {
-    font-size: 1.8rem;
-  }
 `

@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     --black: #000000;
     --gray: #DCDCE5;
     --gray-300: #A8A8B3;
+    --text-secondary: #41414D;
   }
 
   * {

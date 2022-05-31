@@ -24,7 +24,7 @@ export const Button = styled.button`
   transition: 500ms filter;
 
   &:hover {
-    filter: brightness(0.8);
+    filter: brightness(0.9);
   }
 `
 
